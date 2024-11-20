@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="icon" type="images/logo" href="images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div id="navbar"></div> <!-- Placeholder for the navbar -->
+    <script>
+        // Fetch the navbar.html and insert it into the navbar div
+        fetch('navbar.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            });
+    </script>
+<main>
+    <div class="product-container">
+        <div class="product-images">
+            <img id="mainImage" src="images/clothes.png" alt="Product Image" />
+            <div class="thumbnail-images">
+                <img src="images/clothes 5.png" alt="Thumbnail 2" onclick="changeImage('path/to/clothes 5.png')" />
+                        
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h1 id="productName">Clothes</h1>
+            <p id="productRating">⭐⭐⭐⭐☆ (4.5/5 based on 200 reviews)</p>
+            <p id="productPrice">₹200.00</p>
+            <p id="productDescription">Stylish and comfortable clothing</p>
+            <button id="addToCartButton" onclick="addToCart('Product Name')">Add to Cart</button>
+            <button id="buyNowButton" onclick="buyNow('Product Name')">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <p><strong>John Doe:</strong> Great product! Highly recommend.</p>
+            <p>⭐⭐⭐⭐⭐</p>
+        </div>
+        <div class="review">
+            <p><strong>Jane Smith:</strong> Good value for money.</p>
+            <p>⭐⭐⭐⭐</p>
+        </div>
+        <a href="#">See all reviews</a>
+    </div>
+
+    <div class="related-products">
+        <h2>Related Products</h2>
+        <div class="related-product">
+            <img src="images/clothes 3.png" alt="Related Product 1" />
+            <p>Related Product 1</p>
+            <p>₹200.00</p>
+            <button onclick="addToCart('Related Product 1')">Add to Cart</button>
+        </div>
+        <div class="related-product">
+            <img src="images/clothes 2.1.PNG" alt="Related Product 2" />
+            <p>Related Product 2</p>
+            <p>₹500.00</p>
+            <button onclick="addToCart('Related Product 2')">Add to Cart</button>
+        </div>
+    </div>
+
+    <script src="product.js"></script>
+
+</body>
+</html>
+</body>
