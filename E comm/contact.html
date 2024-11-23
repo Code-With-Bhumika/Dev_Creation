@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-commerce</title>
+        <link rel="icon" type="images/logo" href="images/logo.png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div id="navbar"></div> <!-- Placeholder for the navbar -->
+
+        <main class="p-4 max-w-6xl mx-auto mt-16">
+            <!-- Add margin-top to avoid overlap -->
+            <script>
+        // Fetch the navbar.html and insert it into the navbar div
+        fetch('navbar.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            });
+    </script>
+            <main>
+                <section id="Contact-details" class="section -p1">
+                    <div class="container">
+                        <h2>Contact Us</h2>
+                        <p>If you have any questions, concerns, or feedback,
+                            please
+                            don’t hesitate to reach out to us. Our customer
+                            service
+                            team is here to assist you!</p>
+
+                        <section class="contact-info">
+                            <h3>Contact Information</h3>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <p><a
+                                        href="devcreationsblr@gmail.com">devcreationsblr@gmail.com</a><br>Response
+                                    Time: Within 24 hours</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-map"></i>
+                                <p>DEV Creation and solutions<br>1st face, 88, KR Defense Colony, Cheemasandra <br>Bengaluru, Karnataka 
+                                    - 560049<br>India</p>
+                            </li>
+
+                        </section>
+
+                        <div class="social-media">
+                            <p>Follow Us on Social Media</p>
+                            <p>Stay connected with us for updates, promotions, and more!</p>
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.instagram.com/dev_creationsblr/profilecard/?igsh=MXJqM3ppYWU3ejkwaA=="><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/dev-creations-and-solutions/"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="map"></div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497698.77492875466!2d77.30126945310806!3d12.954459531495921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1732180678544!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;"
+                        allowfullscreen loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </section>
+        </main>
+    </body>
+</html>
