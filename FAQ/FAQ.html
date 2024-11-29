@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions - Your Store Name</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<div class="container">
+    <h2>Product and Ordering</h2>
+    <button class="collapsible">1. What payment methods do you accept?</button>
+    <div class="content">
+        <p>We accept various payment methods including credit cards, UPI, and bank transfers.</p>
+    </div>
+
+    <button class="collapsible">2. How long does shipping take?</button>
+    <div class="content">
+        <p>Shipping usually takes between 3-7 business days, depending on your location.</p>
+    </div>
+
+    <button class="collapsible">3. What is your return policy?</button>
+    <div class="content">
+        <p>We accept returns within 15 days of purchase. Items must be in their original condition.</p>
+    </div>
+
+    <button class="collapsible">4. Can I change my order after it has been placed?</button>
+    <div class="content">
+        <p>Unfortunately, we cannot modify orders once they have been placed. However, you can cancel your order and place a new one.</p>
+    </div>
+
+    <button class="collapsible">5. Can I track my order?</button>
+    <div class="content">
+        <p>Yes, you can track your order using the tracking number provided in your shipping confirmation email.</p>
+    </div>
+</div>
+<div class="containers">
+    <h3>Account and Login</h3>
+    <button class="collapsible">1. How do I reset my password?</button>
+    <div class="content">
+        <p>It's usually located near the login button or in the form itself,
+             You'll be asked to enter the email address associated with your account.Once your identity is verified, 
+             you'll be prompted to create a new password.</p>
+    </div>
+
+    <button class="collapsible">2. Why can't I log in?</button>
+    <div class="content">
+        <p>checking for typos in the email address or password, ensuring correct capitalization, or trying to reset the password.</p>
+    </div>
+
+    <button class="collapsible">3. What are the benefits of creating an account?</button>
+    <div class="content">
+        <p>Creating an account allows you to faster checkout, order tracking, saved addresses, and personalized recommendations.</p>
+    </div>
+
+    <button class="collapsible">4. What are your business hours?</button>
+    <div class="content">
+        <p>Our customer service team is available 24 hours.</p>
+    </div>
+    
+    <button class="collapsible">6. How can I contact customer support?</button>
+    <div class="content">
+        <p>You can contact our customer support via email at <a href="mailto:devcreationsblr@gmail.com">devcreationsblr@gmail.com</a></p>
+    </div>
+</div>
+
+<script>
+    // JavaScript for collapsible FAQ sections
+    var coll = document.getElementsByClassName("collapsible");
+    for (let i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+</head>
+</body>
+</html>
