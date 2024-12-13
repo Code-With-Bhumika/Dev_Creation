@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #F0F0F0;
+  padding: 20px;
+  border-radius: 10px;
+}
+.title {
+  background-color: #F0F0F0; /* Matches background color */
+  padding: 10px;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: #E0E0E0; /* Light blue background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.event {
+  text-align: center;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+.ordered .circle {
+  background-color: orange;
+}
+
+.shipped .circle {
+  background-color: #999999;
+}
