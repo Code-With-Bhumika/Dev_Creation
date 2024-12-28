@@ -1,78 +1,31 @@
-/* General Styles */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 20px;
-    padding: 20px;
+    margin: 0px;
+    padding: 130px;
     background-color: #f9f9f9;
+
+}
+h1, h2, h3 {
     color: #333;
 }
-
-/* Headings */
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #2c3e50;
+    text-align: center;
+    font-size: 40px;
 }
-
 h2 {
-    font-size: 2em;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #2980b9;
+    font-size: 20px;
 }
-
-h3 {
-    font-size: 1.5em;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    color: #27ae60;
-}
-
-/* Paragraphs */
 p {
-    margin-bottom: 15px;
-}
-
-/* Lists */
-ul, ol {
     margin: 10px 0;
-    padding-left: 20px;
+    text-align: justify;
 }
-
-/* Links */
-a {
-    color: #2980b9;
-    text-decoration: none;
+ul {
+    margin: 10px 0 10px 20px;
 }
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Footer Contact Section */
 footer {
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #ddd;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    body {
-        margin: 10px;
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    h3 {
-        font-size: 1.2em;
-    }
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
 }
